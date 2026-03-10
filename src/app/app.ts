@@ -15,5 +15,6 @@ export class App {
   // method:
   sayHello() {
     console.log("Xin chào");
+    alert("Bạn đã click button");
   }
 }
