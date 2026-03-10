@@ -17,4 +17,7 @@ export class App {
     console.log("Xin chào");
     alert("Bạn đã click button");
   }
+  handleClick() {
+  alert("Bạn đã click button");
+}
 }
