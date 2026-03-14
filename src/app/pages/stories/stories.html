@@ -1,0 +1,53 @@
+<h2>Danh sách truyện tranh</h2>
+
+@for (story of stories; track story.title) {
+
+<div class="story-card">
+  <h3>{{ story.title }}</h3>
+
+  <p>Năm phát hành: {{ story.releaseYear }}</p>
+
+  <p>Thể loại: {{ story.genre }}</p>
+
+  <p>Ảnh:</p><img width="120" src="{{ story.image }}" alt="{{ story.title }}">
+
+  <p>Lượt xem: {{ story.views }}</p>
+
+
+  @if (story.views > 90000) {
+    <p>🔥 Truyện nổi bật</p>
+  }
+
+  @if (stories.length === 0) {
+    <p>Không có truyện tranh nào</p>
+  }
+</div>
+}
+
+<div class="comic-container">
+    <h2>Danh sách truyện tranh</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Hình ảnh</th>
+                <th>Tên truyện</th>
+                <th>Năm phát hành</th>
+                <th>Thể loại</th>
+                <th>Lượt xem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (story of stories; track story.title) {
+            <tr>
+                <td>{{ $index + 1 }}</td>
+                <td><img width="120" src="{{ story.image }}" alt="{{ story.title }}"></td>
+                <td>{{ story.title }}</td>
+                <td>{{ story.releaseYear }}</td>
+                <td>{{ story.genre }}</td>
+                <td>{{ story.views }}</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
