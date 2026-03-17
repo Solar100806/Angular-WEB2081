@@ -30,7 +30,6 @@ th {
   font-weight: bold;
 }
 
-/* Chỉnh kích thước ảnh để không bị vỡ hoặc quá to */
 .comic-img {
   width: 60px;
   height: auto;

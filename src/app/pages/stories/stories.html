@@ -46,7 +46,11 @@
                 <td>{{ story.releaseYear }}</td>
                 <td>{{ story.genre }}</td>
                 <td>{{ story.views }}</td>
+                <td><button (click)="deleteStory($index)">Xóa</button></td>
             </tr>
+        }
+        @if (stories.length === 0) {
+            <p>Không có truyện tranh nào</p>
         }
         </tbody>
     </table>

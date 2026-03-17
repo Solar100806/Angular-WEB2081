@@ -30,4 +30,8 @@ export class Stories {
       views: 120000,
     },
   ];
+
+  deleteStory(index: number) {
+    this.stories.splice(index, 1);
+  }
 }

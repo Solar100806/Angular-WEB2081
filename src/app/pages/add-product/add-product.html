@@ -1,0 +1,27 @@
+<form [formGroup]="productForm" (ngSubmit)="submitProduct()">
+  <div>
+    <label>Tên sản phẩm:</label>
+    <input formControlName="name">
+    <div  >
+      Tên không được để trống.
+    </div>
+  </div>
+
+  <div>
+    <label>Giá:</label>
+    <input type="number" formControlName="price">
+    <div>
+      Giá phải lớn hơn 0.
+    </div>
+  </div>
+
+  <div>
+    <label>Danh mục:</label>
+    <select formControlName="category">
+      <option value="electronics">Điện tử</option>
+      <option value="fashion">Thời trang</option>
+    </select>
+  </div>
+
+  <button type="submit" [disabled]="productForm.invalid">Thêm sản phẩm</button>
+</form>

@@ -1,0 +1,17 @@
+<h2 class="text-xl">Thêm truyện tranh</h2>
+
+<form [formGroup]="addForm" (ngSubmit)="submitForm()">
+  <div>
+    <label>Tên truyện</label>
+    <input type="text" formControlName="title" />
+  </div>
+  <div>
+    <label>Tác giả</label>
+    <input type="text" formControlName="author" />
+  </div>
+  <div>
+    <label>Lượt xem</label>
+    <input type="number" formControlName="views" />
+  </div>
+  <button type="submit">Thêm truyện</button>
+</form>

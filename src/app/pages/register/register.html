@@ -1,0 +1,29 @@
+<form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+  <div>
+    <label>Username:</label>
+    <input formControlName="username">
+    <div *ngIf="username?.invalid && username?.touched" style="color: red;">
+      Username là bắt buộc.
+    </div>
+  </div>
+
+  <div>
+    <label>Email:</label>
+    <input type="email" formControlName="email">
+    <div *ngIf="email?.invalid && email?.touched" style="color: red;">
+      <span *ngIf="email?.errors?.['required']">Email là bắt buộc.</span>
+      <span *ngIf="email?.errors?.['email']">Email không đúng định dạng.</span>
+    </div>
+  </div>
+
+  <div>
+    <label>Password:</label>
+    <input type="password" formControlName="password">
+    <div *ngIf="password?.invalid && password?.touched" style="color: red;">
+      <span *ngIf="password?.errors?.['required']">Mật khẩu là bắt buộc.</span>
+      <span *ngIf="password?.errors?.['minlength']">Mật khẩu phải từ 6 ký tự.</span>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="registerForm.invalid">Đăng ký</button>
+</form>
