@@ -1,5 +1,13 @@
 <h2 class="text-xl">Thêm truyện tranh</h2>
 
+<div *ngIf="success" style="color: green; font-weight: bold; margin-bottom: 10px;">
+  {{ success }}
+</div>
+<div *ngIf="error" style="color: red; font-weight: bold; margin-bottom: 10px;">
+  {{ error }}
+</div>
+<div *ngIf="loading">Đang xử lý...</div>
+
 <form [formGroup]="addForm" (ngSubmit)="submitForm()">
   <div>
     <label>Tên truyện</label>
@@ -13,5 +21,5 @@
     <label>Lượt xem</label>
     <input type="number" formControlName="views" />
   </div>
-  <button type="submit">Thêm truyện</button>
+  <button type="submit" [disabled]="loading">Thêm truyện</button>
 </form>

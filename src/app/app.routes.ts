@@ -6,6 +6,8 @@ import { Products } from './pages/products/products';
 import { ProductDetail } from './pages/product-detail/product-detail';
 import { Stories } from './pages/stories/stories';
 import { AddStory } from './pages/add-story/add-story';
+import { AddProduct } from './pages/add-product/add-product';
+
 
 export const routes: Routes = [
   {
@@ -36,4 +38,8 @@ export const routes: Routes = [
     path: 'add-story',
     component: AddStory,
   },
+  {
+    path: 'add-product',
+    component: AddProduct,
+  }
 ];

@@ -1,0 +1,210 @@
+{
+  "stories": [
+    {
+      "id": "1",
+      "title": "Đắc Nhân Tâm",
+      "author": "Dale Carnegie",
+      "views": 15000
+    },
+    {
+      "id": "2",
+      "title": "Nhà Giả Kim",
+      "author": "Paulo Coelho",
+      "views": 25000
+    },
+    {
+      "id": "3",
+      "title": "Tuổi Trẻ Đáng Giá Bao Nhiêu",
+      "author": "Rosie Nguyễn",
+      "views": 18000
+    },
+    {
+      "id": "4",
+      "title": "Tôi Thấy Hoa Vàng Trên Cỏ Xanh",
+      "author": "Nguyễn Nhật Ánh",
+      "views": 22000
+    },
+    {
+      "id": "5",
+      "title": "Dế Mèn Phiêu Lưu Ký",
+      "author": "Tô Hoài",
+      "views": 12000
+    },
+    {
+      "id": "6",
+      "title": "Harry Potter và Hòn Đá Phù Thủy",
+      "author": "J.K. Rowling",
+      "views": 50000
+    },
+    {
+      "id": "7",
+      "title": "Hai Số Phận",
+      "author": "Jeffrey Archer",
+      "views": 11000
+    },
+    {
+      "id": "8",
+      "title": "Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "views": 32000
+    },
+    {
+      "id": "9",
+      "title": "Không Gia Đình",
+      "author": "Hector Malot",
+      "views": 14500
+    },
+    {
+      "id": "10",
+      "title": "Hoàng Tử Bé",
+      "author": "Antoine de Saint-Exupéry",
+      "views": 27000
+    },
+    {
+      "id": "4823",
+      "title": "Naruto",
+      "author": "Duy Hiếu",
+      "views": 2000
+    },
+    {
+      "id": "bb90",
+      "title": "abc",
+      "author": "abc",
+      "views": 12
+    },
+    {
+      "id": "ca2e",
+      "title": "abc",
+      "author": "abc",
+      "views": 12
+    },
+    {
+      "id": "e616",
+      "title": "hiếu",
+      "author": "hiếu",
+      "views": 12
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 15 Pro Max",
+      "price": 1200
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S24 Ultra",
+      "price": 1300
+    },
+    {
+      "id": "3",
+      "name": "MacBook Pro M3",
+      "price": 2000
+    },
+    {
+      "id": "4",
+      "name": "iPad Pro M4",
+      "price": 999
+    },
+    {
+      "id": "5",
+      "name": "Apple Watch Series 9",
+      "price": 399
+    },
+    {
+      "id": "6",
+      "name": "AirPods Pro Gen 2",
+      "price": 249
+    },
+    {
+      "id": "7",
+      "name": "Sony A7IV",
+      "price": 2500
+    },
+    {
+      "id": "8",
+      "name": "Nintendo Switch OLED",
+      "price": 349
+    },
+    {
+      "id": "9",
+      "name": "PlayStation 5",
+      "price": 499
+    },
+    {
+      "id": "10",
+      "name": "Dell XPS 15",
+      "price": 1800
+    },
+    {
+      "id": "11",
+      "name": "Asus ROG Zephyrus",
+      "price": 1600
+    },
+    {
+      "id": "12",
+      "name": "LG OLED C3",
+      "price": 1400
+    },
+    {
+      "id": "13",
+      "name": "GoPro HERO12",
+      "price": 399
+    },
+    {
+      "id": "14",
+      "name": "Bose QuietComfort Ultra",
+      "price": 429
+    },
+    {
+      "id": "15",
+      "name": "Sony WH-1000XM5",
+      "price": 398
+    },
+    {
+      "id": "16",
+      "name": "DJI Mini 4 Pro",
+      "price": 759
+    },
+    {
+      "id": "17",
+      "name": "Kindle Paperwhite",
+      "price": 149
+    },
+    {
+      "id": "18",
+      "name": "Logitech MX Master 3S",
+      "price": 99
+    },
+    {
+      "id": "19",
+      "name": "Keychron Q1 Pro",
+      "price": 199
+    },
+    {
+      "id": "20",
+      "name": "Samsung Odyssey G9",
+      "price": 1500
+    },
+    {
+      "id": "d7f2",
+      "name": "abc",
+      "price": 12
+    },
+    {
+      "id": "634f",
+      "name": "abc",
+      "price": 123
+    },
+    {
+      "id": "40c1",
+      "name": "abc",
+      "price": 123
+    },
+    {
+      "id": "9cfe",
+      "name": "abc",
+      "price": 12
+    }
+  ]
+}
