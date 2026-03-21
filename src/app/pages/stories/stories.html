@@ -1,57 +1,35 @@
-<h2>Danh sách truyện tranh</h2>
+<div *ngIf="isLoading" class="loading">Đang tải dữ liệu từ server...</div>
+<div *ngIf="isError" class="error" style="color: red;">Có lỗi xảy ra khi lấy dữ liệu!</div>
 
-@for (story of stories; track story.title) {
-
-<div class="story-card">
-  <h3>{{ story.title }}</h3>
-
-  <p>Năm phát hành: {{ story.releaseYear }}</p>
-
-  <p>Thể loại: {{ story.genre }}</p>
-
-  <p>Ảnh:</p><img width="120" src="{{ story.image }}" alt="{{ story.title }}">
-
-  <p>Lượt xem: {{ story.views }}</p>
-
-
-  @if (story.views > 90000) {
-    <p>🔥 Truyện nổi bật</p>
-  }
-
-  @if (stories.length === 0) {
-    <p>Không có truyện tranh nào</p>
-  }
-</div>
-}
-
-<div class="comic-container">
-    <h2>Danh sách truyện tranh</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>STT</th>
-                <th>Hình ảnh</th>
-                <th>Tên truyện</th>
-                <th>Năm phát hành</th>
-                <th>Thể loại</th>
-                <th>Lượt xem</th>
-            </tr>
-        </thead>
-        <tbody>
-            @for (story of stories; track story.title) {
-            <tr>
-                <td>{{ $index + 1 }}</td>
-                <td><img width="120" src="{{ story.image }}" alt="{{ story.title }}"></td>
-                <td>{{ story.title }}</td>
-                <td>{{ story.releaseYear }}</td>
-                <td>{{ story.genre }}</td>
-                <td>{{ story.views }}</td>
-                <td><button (click)="deleteStory($index)">Xóa</button></td>
-            </tr>
-        }
-        @if (stories.length === 0) {
-            <p>Không có truyện tranh nào</p>
-        }
-        </tbody>
-    </table>
-</div>
+<table *ngIf="!isLoading && !isError" border="1" style="width: 100%; text-align: left;">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Tiêu đề (Title)</th>
+      <th>Lượt xem (Views)</th>
+      <th>Đánh giá</th>
+      <th>Hành động</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let story of stories">
+      <td>{{ story.id }}</td>
+      <td>{{ story.title }}</td>
+      <td>{{ story.views }}</td>
+      
+      <td>
+        <span *ngIf="story.views > 90000" style="color: red; font-weight: bold;">
+          🔥 HOT
+        </span>
+      </td>
+      
+      <td>
+        <button 
+          (click)="deleteItem(story.id)" 
+          [disabled]="deletingId === story.id">
+          {{ deletingId === story.id ? 'Đang xóa...' : 'Xóa' }}
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
